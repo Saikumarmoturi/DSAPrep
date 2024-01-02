@@ -4,8 +4,8 @@ public class SumofDivisors {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
-        int isArmstrong = sumOfAllDivisors(x);
-        System.out.println(isArmstrong);
+        int sumofDivisors = sumOfAllDivisors(x);
+        System.out.println(sumofDivisors);
         sc.close();
     }
     public static int sumOfAllDivisors(int n){
