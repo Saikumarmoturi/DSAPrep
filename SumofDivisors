@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SumofDivisors {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int isArmstrong = sumOfAllDivisors(x);
+        System.out.println(isArmstrong);
+        sc.close();
+    }
+    public static int sumOfAllDivisors(int n){
+        int allDivisorsSum = 0;
+
+        for(int i =1;i<=n;i++){
+            allDivisorsSum = allDivisorsSum + (n/i)*i;
+        }
+        return allDivisorsSum;
+        // Write your code here.
+    }
+
+}
